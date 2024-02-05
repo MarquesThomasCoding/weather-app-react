@@ -9,7 +9,7 @@ export default function ForecastComponent(city) {
     useEffect(() => {
         const fetchForecast = async () => {
         try {
-            const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b01876319e9d4a949d0154404242001&q=${searchCity}&days=5`);
+            const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b01876319e9d4a949d0154404242001&q=${searchCity}&days=3`);
             
             if (!response.ok) {
                 throw new Error(`No city found for "${searchCity}"`);

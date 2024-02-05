@@ -16,7 +16,7 @@ const App = () => {
         <SearchComponent setCity={searchSetCity} />
       </div>
       <TodayComponent city={city} />
-      <h2 className="forecast-title">Next 5 days :</h2>
+      <h2 className="forecast-title">Next 3 days :</h2>
       <ForecastComponent city={city} />
     </div>
   );
